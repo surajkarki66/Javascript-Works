@@ -1,18 +1,38 @@
 const colorBtn = document.querySelector('.color-btn');
-const bodyBck = document.querySelector('body')
+const discoBtnOn = document.querySelector('.disco-btn-on');
 const text = document.getElementById('text');
-
-const colors = ['red', 'green','blue', 'yellow', 'purple', 'pink'];
-
 colorBtn.addEventListener('click', colorChanger);
+discoBtnOn.addEventListener('click', initDisco);
+const disco = () => {
 
+setInterval(function(){
+        var x = Math.round( Math.random() * 255 );
+        var y = Math.round( Math.random() * 255 );
+        var z = Math.round( Math.random() * 255 );
+        var bg = "background:rgb("+x+", "+y+", "+z+");";
+        var element = document.querySelector('body');
+        element.style = bg;
+        text.textContent = "Colors: " + "RGB " + "(" + x + "," + y + "," + z + ")";   
 
-function colorChanger() {
-
-        let num = Math.floor((Math.random())*5 + 1)
-        bodyBck.style.backgroundColor = colors[num]; 
-        text.textContent = colors[num];  
+    }, 300);
 
 }
 
-  
+function colorChanger() {
+      
+        var x = Math.round( Math.random() * 255 );
+        var y = Math.round( Math.random() * 255 );
+        var z = Math.round( Math.random() * 255 );
+        var bg = "background:rgb("+x+", "+y+", "+z+");";
+        var element = document.querySelector('body');
+        element.style = bg;
+        text.textContent = "Colors: " + "RGB " + "(" + x + "," + y + "," + z + ")";   
+
+}
+
+
+function initDisco() {
+        disco();
+}
+
+    
