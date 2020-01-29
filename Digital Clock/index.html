@@ -1,8 +1,35 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title></title>
-    <meta content="">
-    <style></style>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+    <link rel="stylesheet" href="style.css">
+
+    <title>Digital Clock</title>
   </head>
-  <body></body>
+  <body onload="main(); setInterval('main()', 1000 )">
+    
+    <div class="clock-main">
+      <span id="clock">&nbsp;</span><br>
+      <span id="calender">&nbsp;</span>
+    </div>  
+    
+    <script src="script.js"></script>
+    <script>
+setInterval(function(){
+        var x = Math.round( Math.random() * 255 );
+        var y = Math.round( Math.random() * 255 );
+        var z = Math.round( Math.random() * 255 );
+        var bg = "background:rgb("+x+", "+y+", "+z+");";
+        var element = document.querySelector('body');
+        element.style = bg;
+
+    }, 1000);
+    </script>
+   
+
+  </body>
 </html>

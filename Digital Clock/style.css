@@ -1,0 +1,47 @@
+body {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+ h2 {
+     color:white;
+ }
+
+.clock-main{
+    position: relative;
+    padding: 0.25rem, 0.5rem;
+    border: 3px solid black;
+    border-radius: 7px;
+    color: black;
+    background-color: rgba(0,0,1, 1.5);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    outline: none;
+  
+}
+
+#clock {
+    color: white;
+    font-size: 4rem;
+}
+
+#calender {
+    color: rgb(97, 97, 243);
+    font-size: 2rem;   
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+
+
+
+
