@@ -1,0 +1,85 @@
+textarea {
+    display: flex;
+    width: 90%;
+    height: 140px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    margin-left: 60px;
+  }
+  
+  textarea:focus {
+    border: 3px solid #555;
+  }
+
+
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(167, 151, 151);
+}
+
+ /* Buttons */
+ #button,
+ #clear {
+    text-align: center;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(76, 76, 223);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;  
+  }
+  
+  #button span,
+  #clear span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #button span:after,
+  #clear span::after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #button:hover span ,
+  #clear:hover span{
+    padding-right: 25px;
+  }
+  
+  #button:hover span:after,
+  #clear:hover span::after {
+    opacity: 1;
+    right: 0;
+  }
+
+.message 
+{
+    display: flexbox;
+    text-align: center;
+}
+
+
+.full-message 
+{
+    font-size: 28px;
+    text-align: center;
+
+}
