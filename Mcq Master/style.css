@@ -5,7 +5,8 @@ body {
 }
  /* Buttons */
  #submit,
- #next {
+ #next,
+ #start {
     text-align: center;
     display: inline-block;
     border-radius: 4px;
@@ -15,14 +16,66 @@ body {
     text-align: center;
     font-size: 15px;
     padding: 10px;
-    width: 100px;
+    width: 120px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;  
+   
   }
-  
+
+  #submit {
+    visibility: hidden;
+    top: 60px;
+    position: relative;
+  }
+
+  #next {
+    float: right;
+    position: relative;
+    top: 70px;
+    right: 10px;
+    visibility: hidden;
+
+  }
+
+  #start {
+    position: relative;
+    left: 500px;
+    bottom: 20px;
+    width: 160px;
+    height: 50px;
+    font-size: 25px;
+  }
+
+  .btn {
+    text-align: center;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(0, 132, 150);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 210px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px; 
+    margin-right: 100px; 
+    position: relative;
+    top: 30px;
+    left: 10px;
+   
+  }
+
+
+
+.btn:hover{
+  color: rgb(0, 0, 0);
+}
   #submit span,
-  #next span {
+  #next span,
+  #start span {
     cursor: pointer;
     display: inline-block;
     position: relative;
@@ -30,7 +83,8 @@ body {
   }
   
   #submit span:after,
-  #next span::after {
+  #next span::after,
+  #start span::after{
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -40,12 +94,14 @@ body {
   }
   
   #submit:hover span ,
-  #next:hover span{
+  #next:hover span,
+  #start:hover span{
     padding-right: 25px;
   }
   
   #submit:hover span:after,
-  #next:hover span::after {
+  #next:hover span::after,
+  #start:hover span::after{
     opacity: 1;
     right: 0;
   }
@@ -93,11 +149,12 @@ h1 {
     background: rgb(211, 190, 190);
     bottom: 60px;
     border: 2px solid black;
+    left: 1px;
 }
 
 .question {
     font-size: 30px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .choice {
@@ -119,3 +176,19 @@ input[type=radio   ]:not(old){
     line-height  : 24px;
     
   }
+
+#answer-buttons {
+  visibility: hidden;
+}
+
+.wrong {
+  background-color: rgb(207, 49, 49); 
+}
+
+.correct {
+  background-color: rgb(25, 139, 25);
+}
+
+.restart {
+  color: aqua;
+}
