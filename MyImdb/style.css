@@ -1,0 +1,80 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background: black;
+  }
+
+  h1,h2 {
+      color: white;
+      text-align: center;
+  }
+
+  #searchfor {
+    padding-top: 10px;
+    font-size: 30px;
+    color: black;
+
+}
+  input[type=text] {
+    position: relative;
+    padding: 6px;
+    border: none;
+    margin-top: 18px;
+    font-size: 17px;
+    left: 200px;
+    width: 70%;
+    
+  }
+
+  #submit {
+      position: relative;
+      background-color: rgb(218, 168, 76);
+      left: 605px;
+      top: 20px;
+      width: 10%;
+      height: 40px;
+      font-size: 20px;
+
+  }
+
+  .content {
+      position: relative;
+      background-color: white;
+      top: 10px;
+      width: 80%;
+      border-radius: 30px;
+      left: 120px;
+      height: 160%;
+      visibility: hidden;
+      color: rgb(238, 172, 51);
+      
+  }
+  h3 {
+      color: black;
+      position: relative;
+      margin-left: 2%;
+      padding-bottom: 20px;
+      
+  }
+
+  .image 
+  {
+    position: relative;
+    left: 800px;
+    bottom: 20px;
+    border-radius: 15px;
+  }
+
+  h3 {
+    margin-right: 100px;
+    bottom: 380px;
+  }
+
+
+  
