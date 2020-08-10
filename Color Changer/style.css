@@ -1,60 +1,71 @@
 body {
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 h2 {
-    color: #fefefe;
-    text-align: center;
+  color: #fefefe;
+  text-align: center;
 }
 
-
-
-.color-btn{
-    position: relative;
-    padding: 0.25rem, 0.5rem;
-    border: 3px solid#fefefe;
-    border-radius: 7px;
-    color: #fefefe;
-    background-color: rgba(0,0,0.5, 0.5);
-    font-size: 1.5rem;
-    text-transform: capitalize;
-    cursor: pointer;
-    outline: none;
-    left: 5rem;
-}
-
-
- h3,
- .disco-btn-on {
-    position: relative;
-    padding: 0.45rem, 0.5rem;
-    border: 3px solid#fefefe;
-    border-radius: 7px;
-    color: #fefefe;
-    background-color: rgba(0,0,0.5, 0.5);
-    font-size: 1.4rem;
-    text-transform: capitalize;
-    cursor: pointer;
-    outline: none; 
-    top: 6rem;
-    right: 10.5rem;
+.color-btn {
+  position: relative;
+  padding: 0.25rem, 0.5rem;
+  border: 3px solid#fefefe;
+  border-radius: 7px;
+  color: #fefefe;
+  background-color: rgba(0, 0, 0.5, 0.5);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  outline: none;
+  left: 6rem;
 }
 
 h3 {
-    background-color: black;
+  position: relative;
+  top: 6rem;
+  right: 12.5rem;
+  text-transform: capitalize;
+}
+.disco-btn-on {
+  position: relative;
+  padding: 0.45rem, 0.5rem;
+  border: 2px solid#fefefe;
+  border-radius: 6px;
+  color: #fefefe;
+  background-color: rgba(0, 0, 0.5, 0.5);
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  top: 6rem;
+  right: 11.5rem;
+}
+.disco-btn-off {
+  position: relative;
+  padding: 0.45rem, 0.5rem;
+  border: 2px solid#fefefe;
+  border-radius: 6px;
+  color: #fefefe;
+  background-color: rgba(0, 0, 0.5, 0.5);
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  top: 6rem;
+  right: 11rem;
 }
 
-.disco-btn-on:hover {
-    background-color: rgb(0, 0, 0);
+.disco-btn-on:hover,
+.disco-btn-off:hover {
+  background-color: rgb(0, 0, 0);
 }
 
 .color-btn:hover {
-    background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
 }
 
 #text {
-    font-size: 1rem;
+  font-size: 1rem;
 }
